@@ -10,45 +10,38 @@ package studentclass;
  */
 public class student {
     private String name;
-    private int ID=1;
-   private int semester;
-   private final String department="CE";
-   
-   public student(String name,String department, int semester){
-       
-       this.ID=ID;
-       this.name=name;
-       this.semester=semester;
-   }
-public void setID(int ID){
-    this.ID++;
-}
-   public int getID(){
-       
-       return ID;
-   }
- 
-   public String getname(){
-       
-       
-       return name;
-   }
+    private int ID;
+    private int semester;
+    private String department;
+    private static int nextID = 1;
 
-   public String getdepartment(){
-       
-       return department;
-   }
+    public student(String name, String department, int semester) {
+        this.name = name;
+        this.department = department;
+        this.semester = semester;
+        this.ID = nextID++;
+    }
 
- public int getsemester(){
-     
-     
-     return semester;
- }
- void display(){
-     
-     System.out.println("StudentID:"+ID);
-     System.out.println("StudentName:"+name);
-     System.out.println("department:"+department);
-     System.out.println("semester:"+semester);
- }
+    public int getID() {
+        return ID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public int getSemester() {
+        return semester;
+    }
+
+    public void display() {
+        System.out.println("Student ID: " + ID);
+        System.out.println("Student Name: " + name);
+        System.out.println("Department: " + department);
+        System.out.println("Semester: " + semester);
+    }
 }

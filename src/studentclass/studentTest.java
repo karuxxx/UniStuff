@@ -16,6 +16,6 @@ public class studentTest {
  
        student1.display();
         System.out.println("*************");
-        student1.display();
+        student2.display();
     }
 }
