@@ -28,7 +28,7 @@ public class watchTest {
         System.out.println("do you want to update the time for the second clock? yes/no");
         String ans=scan.next();
         if (ans.equalsIgnoreCase("yes")){
-            System.out.println("enter the new time(hour minute second");
+            System.out.println("enter the new time(hour minute second)");
             int hour=scan.nextInt();
             int minute=scan.nextInt();
             int second=scan.nextInt();

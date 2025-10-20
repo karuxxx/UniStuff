@@ -31,7 +31,9 @@ public class watch {
     }
       public watch(int hour, int minute, int second){
         
-     this( hour,  minute, second);
+      this.hour = hour;
+        this.minute = minute;
+        this.second = second;
         
     
     }
