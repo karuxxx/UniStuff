@@ -31,15 +31,13 @@ public class watch {
     }
       public watch(int hour, int minute, int second){
         
-        this.hour=hour;
-        this.minute=minute;
-        this.second=second;
+     this( hour,  minute, second);
         
     
     }
     
  public watch(int hour){
-     this.hour=hour;
+     this(hour,0,0);
      
  }
  public void sethour(int hour){
