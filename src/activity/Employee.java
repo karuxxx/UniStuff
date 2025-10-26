@@ -13,7 +13,7 @@ public class Employee {
     private String lastName;
     private double monthlySalary;
 
-    // Constructor
+ 
     public Employee(String firstName, String lastName, double monthlySalary) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -22,7 +22,7 @@ public class Employee {
         }
     }
 
-    // Setters
+  
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -37,7 +37,7 @@ public class Employee {
         }
     }
 
-    // Getters
+
     public String getFirstName() {
         return firstName;
     }
@@ -50,12 +50,11 @@ public class Employee {
         return monthlySalary;
     }
 
-    // Method to calculate yearly salary
     public double getYearlySalary() {
         return monthlySalary * 12;
     }
 
-    // Method to raise salary by percentage
+    
     public void raiseSalary(double percent) {
         if (percent > 0) {
             monthlySalary = monthlySalary + (monthlySalary * percent / 100);
